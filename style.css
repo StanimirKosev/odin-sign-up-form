@@ -54,29 +54,29 @@ table {
 }
 
 
-
-  body {
+body {
     min-height: 100vh;
     width: 100%;
     display: flex;
-    align-items: center;
-    font-family: var(--my-font);
+    justify-content: center;
     background-color: #F5F5F5;
-    
 }
 .left-side-bar{
-    max-height: 100vh;
+    max-height: 100vh; 
+    position: relative;
+
 }
 .left-side-bar > img{
-    width: 450px;
-    height: 900px;
+    width: 600px ;
+    height: 827px;  
+
 }
 .background-logo{
-    position: relative;
-    bottom:100vh ;
+    position: absolute;
+    top:180px;
+    width: 600px; 
     background-color: rgb(0,0,0,0.4);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 15px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,10 +94,8 @@ table {
 .credit{
     color: white;
     position:absolute ;
-    bottom: -180px;
-    left: 100px;
-    display: flex;
-    align-items: center;
+    bottom: 1vh;
+    left: 190px;
 }
 a {
     color: white;
@@ -106,17 +104,18 @@ a {
 .right-content{
     display: flex;
     flex-direction: column; 
-    max-height: 100vh;
+    min-height: 100vh;
+    max-width: 1130px;
 }
 .uppertxt2,
 .uppertxt1{
     position: absolute;
-    top: 128px; 
+    top: 130px; 
     font-size: 20px;
     font-weight:bold;
     padding-left: 40px;
-    max-width: 620px;
-    line-height: 30px;
+    max-width: 550px;
+    line-height: 25px;
 }
 em {
     font-style: italic;
@@ -132,47 +131,50 @@ form {
     padding:55px 30px 5px;
     margin-top: 320px;
     padding-right: 630px;
+    position:relative;
 }
 
 legend{
     position: absolute;
-    bottom: 355px;
-    padding-left: 17px;
+    top: 0px;  /** 1000 times better, relative in the parent - do the same for the left side  */
+    padding-left: 10px;
     padding-top:20px ;
     font-size: 20px;
     font-weight: bold;
+    text-align:left;
 }
 
 fieldset{
     display: flex;
     flex-direction: column;
-    padding:0px 20px;
+    padding:0px 40px 0px 10px;
 }
 
 input{
     padding: 5px 45px;
-    border:1px solid #E5E7EB;
+    border:1px solid var(--inputs);
     border-radius: 3px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;   /** writing */
 }
 label{
     margin-bottom: 5px;
+    font-size: 14px;
 }
 button{
     background-color: var(--create-acc-button);
     color: white;
-    padding: 10px 45px;
+    padding: 10px 35px;
     border: 0px; 
-    border-radius: 12px;
+    border-radius: 8px;
     font-size: 20px;
     font-weight: bold;
     margin-top: 30px;
     margin-left: 50px;
-    max-width: 250px;
+    max-width: 220px;
 }
 .right-content>div:last-child{
-    font-size: 17px;
-    margin-top: 30px;
+    font-size: 18px;
+    margin-top: 25px;
     margin-left: 50px;   
 }
 a[href*=stanimirkosev]{    
