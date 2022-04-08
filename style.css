@@ -45,7 +45,7 @@ table {
 
 :root{
     --my-font:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --create-acc-button:#596D48
+    --create-acc-button:#596D48;
     --inputs:#E5E7EB
 }
 @font-face{
@@ -54,10 +54,12 @@ table {
 }
 
 
-body {
+
+  body {
     display: flex;
     align-items: center;
     font-family: var(--my-font);
+    background-color: #F5F5F5;
 }
 .left-side-bar{
     height: 100vh;
@@ -96,5 +98,58 @@ body {
 }
 a {
     color: white;
-    padding: 0px 5px;
+    padding: 0px 3px;
+}
+.uppertxt2,
+.uppertxt1{
+    position: absolute;
+    top: 135px;
+    font-size: 20px;
+    font-weight:bold;
+    padding-left: 40px;
+    max-width: 620px;
+    line-height: 30px;
+}
+em {
+    font-style: italic;
+}
+.uppertxt2{
+    top: 245px;
+}
+
+form {
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+legend{
+    padding-left: 40px;
+    padding-top:20px ;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+button{
+    background-color: var(--create-acc-button);
+    color: white;
+    padding: 10px 45px;
+    border: 0px; 
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 20px;
+   
+}
+.right-content>div:last-child{
+    font-size: 17px;
+    margin-top: 30px;
+    margin-left: 20px;   
+}
+a[href*=stanimirkosev]{    
+    color: var(--create-acc-button);
+    text-decoration: none;
 }
