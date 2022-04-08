@@ -56,13 +56,16 @@ table {
 
 
   body {
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     font-family: var(--my-font);
     background-color: #F5F5F5;
+    
 }
 .left-side-bar{
-    height: 100vh;
+    max-height: 100vh;
 }
 .left-side-bar > img{
     width: 450px;
@@ -70,7 +73,7 @@ table {
 }
 .background-logo{
     position: relative;
-    bottom: 85vh;
+    bottom:100vh ;
     background-color: rgb(0,0,0,0.4);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -90,8 +93,8 @@ table {
 }
 .credit{
     color: white;
-    position:relative ;
-    bottom:19vh;
+    position:absolute ;
+    bottom: -180px;
     left: 100px;
     display: flex;
     align-items: center;
@@ -100,10 +103,15 @@ a {
     color: white;
     padding: 0px 3px;
 }
+.right-content{
+    display: flex;
+    flex-direction: column; 
+    max-height: 100vh;
+}
 .uppertxt2,
 .uppertxt1{
     position: absolute;
-    top: 135px;
+    top: 128px; 
     font-size: 20px;
     font-weight:bold;
     padding-left: 40px;
@@ -114,24 +122,42 @@ em {
     font-style: italic;
 }
 .uppertxt2{
-    top: 245px;
+    top: 240px; 
+   
 }
 
 form {
     background-color: white;
-    padding-bottom: 50px;
+    display: flex;
+    padding:55px 30px 5px;
+    margin-top: 320px;
+    padding-right: 630px;
 }
 
 legend{
-    padding-left: 40px;
+    position: absolute;
+    bottom: 355px;
+    padding-left: 17px;
     padding-top:20px ;
     font-size: 20px;
     font-weight: bold;
 }
 
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding:0px 20px;
+}
 
-
-
+input{
+    padding: 5px 45px;
+    border:1px solid #E5E7EB;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+label{
+    margin-bottom: 5px;
+}
 button{
     background-color: var(--create-acc-button);
     color: white;
@@ -141,13 +167,13 @@ button{
     font-size: 20px;
     font-weight: bold;
     margin-top: 30px;
-    margin-left: 20px;
-   
+    margin-left: 50px;
+    max-width: 250px;
 }
 .right-content>div:last-child{
     font-size: 17px;
     margin-top: 30px;
-    margin-left: 20px;   
+    margin-left: 50px;   
 }
 a[href*=stanimirkosev]{    
     color: var(--create-acc-button);
