@@ -8,51 +8,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="left-side-bar">
         <img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="left-side-pic">
         <div class="background-logo">
             <img src="./images/odin-lined.png" alt="odin-logo">
             <div class="logo-txt">ODIN</div>
         </div>
-        <div class="credit">Photo by<a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a>on<a href="https://unsplash.com/">Unsplash</a></div>
+        <div class="credit">Photo by<a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a>on<a href="https://unsplash.com/">Unsplash</a>
+        </div>
     </div> 
+    
     <div class="right-content">
-        <p class="uppertxt1">This is not a real online service! You know you need something like this 
+        <p class="uppertxt1"> This is not a real online service! You know you need something like this 
             in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
         </p>
-        <div class="uppertxt2">You <em>know</em> you want to.</div>
-    
+        <div class="uppertxt2">You <em>know</em> you want to.
+        </div>
         <form action="" method="post">
             <legend>Let's do this!</legend>            
                 <fieldset>
                     <label for="firstName">FIRST NAME</label>
                     <input type="text" id="firstName" name="last_name">
-                
                     <label for="userEmail">EMAIL</label>
-                    <input type="email" id="userEmail" name="email">
-                    
+                    <input type="email" id="userEmail" name="email" required placeholder=" " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     <label for="userPassword">PASSWORD</label>
-                    <input type="password" id="userPassword" name="password">
-                    
-                    
+                    <input type="password" id="userPassword" name="password" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
                 </fieldset> 
                 <fieldset>
                     <label for="lastName">LAST NAME</label>
                     <input type="text" id="lastName" name="first_name">
-                
-            
                     <label for="phoneNum">PHONE NUMBER</label>
                     <input type="text" id="phoneNum" name="phone_num">
-                
-                    
-               
                     <label for="passwordConfirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="passwordConfirm" name="passwordConfirm">
+                    <input  type="password" id="passwordConfirm" name="passwordConfirm" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
                 </fieldset>
-                   
         </form>
         <button type="submit">Create Account</button>
-        <div>Already have an account? <a href="https://stanimirkosev.github.io/odin-sign-up-form/">Log in</a></div>
+        <div>Already have an account? <a href="https://stanimirkosev.github.io/odin-sign-up-form/">Log in</a>
+        </div>
     </div>
+
 </body>
 </html>

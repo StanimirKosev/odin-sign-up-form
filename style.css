@@ -54,23 +54,26 @@ table {
 }
 
 
-body {
+body{
     min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: #F5F5F5;
+    font-family: var(--my-font);
 }
+
 .left-side-bar{
     max-height: 100vh; 
     position: relative;
-
+    color: white;
 }
+
 .left-side-bar > img{
     width: 600px ;
     height: 827px;  
-
 }
+
 .background-logo{
     position: absolute;
     top:180px;
@@ -86,40 +89,45 @@ body {
     width: 90px;
     height: 110px;
 }
+
 .logo-txt{
-    color: white;
     font-family: odin-font;
     font-size: 80px;
 }
+
 .credit{
-    color: white;
     position:absolute ;
     bottom: 1vh;
     left: 190px;
 }
-a {
+
+a{
     color: white;
     padding: 0px 3px;
 }
+
 .right-content{
     display: flex;
     flex-direction: column; 
     min-height: 100vh;
     max-width: 1130px;
 }
+
 .uppertxt2,
 .uppertxt1{
     position: absolute;
-    top: 130px; 
+    top: 125px; 
     font-size: 20px;
     font-weight:bold;
     padding-left: 40px;
-    max-width: 550px;
+    max-width: 620px;
     line-height: 25px;
 }
+
 em {
     font-style: italic;
 }
+
 .uppertxt2{
     top: 240px; 
    
@@ -132,16 +140,18 @@ form {
     margin-top: 320px;
     padding-right: 630px;
     position:relative;
+    box-shadow: 0px 22px 10px -20px #cccccc;
 }
 
 legend{
     position: absolute;
-    top: 0px;  /** 1000 times better, relative in the parent - do the same for the left side  */
-    padding-left: 10px;
-    padding-top:20px ;
+    top: 0px;  
+    padding-left: 12px;
+    padding-top:15px ;
     font-size: 20px;
     font-weight: bold;
     text-align:left;
+    color: #262626;
 }
 
 fieldset{
@@ -151,15 +161,32 @@ fieldset{
 }
 
 input{
-    padding: 5px 45px;
     border:1px solid var(--inputs);
     border-radius: 3px;
-    margin-bottom: 20px;   /** writing */
+    margin-bottom: 20px;   
+    font-size: 16px;
+    padding: 7px;
+    width: 250px;
 }
+
+input:focus{
+	outline: none !important;
+    border-color: #3b71ab;
+    box-shadow: 0px 3px 4px  #cccccc;
+}
+
+input[required]:invalid:not(:focus):not(:placeholder-shown){
+	outline: none !important;
+    border-color: #cc0000;
+    box-shadow: 0px 3px 4px  #cccccc;
+}
+
 label{
     margin-bottom: 5px;
     font-size: 14px;
+    color: #262626;
 }
+
 button{
     background-color: var(--create-acc-button);
     color: white;
@@ -172,11 +199,13 @@ button{
     margin-left: 50px;
     max-width: 220px;
 }
+
 .right-content>div:last-child{
     font-size: 18px;
     margin-top: 25px;
     margin-left: 50px;   
 }
+
 a[href*=stanimirkosev]{    
     color: var(--create-acc-button);
     text-decoration: none;
